@@ -17,13 +17,14 @@ export default function ToDo() {
     return (
     <div>
     <Link to="/">home</Link>
-        <h1>Lista de Atividades</h1>
-         <form onSubmit={salvar}>
+    <br/>
+    <center>    <h1>Lista de Atividades</h1></center><br/>
+    <center>    <form onSubmit={salvar}>
         <input type="text" onChange={(e)=>{setAtividade(e.target.value)}}/>
         <button>ADD</button>
-        </form>   
+        </form>   </center>
             <div>
-                {lista.map((atividade) => <p key={atividade.id}>  {atividade.atividade}</p>)}
+            <center>   {lista.map((atividade) => <p key={atividade.id}>  {atividade.atividade}</p>)} </center>
             </div>
            
         </div>
